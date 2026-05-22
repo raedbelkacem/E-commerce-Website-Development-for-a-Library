@@ -1,0 +1,23 @@
+/* Add styles for user/admin icon in navbar */
+.navbar-nav .nav-item.dropdown .nav-link {
+    cursor: pointer;
+    color: #fff;
+}
+
+.navbar-nav .nav-item.dropdown .nav-link:hover,
+.navbar-nav .nav-item.dropdown .nav-link:focus {
+    color: #ddd;
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+    min-width: 150px;
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+    cursor: pointer;
+}
+
+/* Icon spacing */
+.navbar-nav .nav-item.dropdown .nav-link i {
+    font-size: 1.2rem;
+}
