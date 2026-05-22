@@ -1,0 +1,190 @@
+body{
+    margin: 0px;
+}
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    
+}
+header nav .dev {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+header nav .liste, header nav .icon {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+header nav a {
+    text-decoration: none;
+    color: white;
+}
+.first {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+.first img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header nav .liste, header nav .icon {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .content p {
+        font-size: 1rem;
+    }
+}
+
+ul{
+    display: flex;
+    text-transform: none;
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.liste li{
+    margin: 5%;
+    white-space: nowrap;
+}
+.liste li:hover{
+    background-color: rgb(88, 88, 77); 
+    padding: 3%; 
+}
+.dev {
+    display: flex; /* Align the Developer text in a flex container */
+    align-items: center; /* Center the "Developer" text vertically */
+    margin-left: 40px; /* Adjust the left margin for positioning */
+}
+.dev li {
+    font-family: cursive;
+    font-style: italic;
+    text-shadow: 0.5px 0.5px red;
+}
+.icon {
+    display: flex;
+    align-items:center;
+}
+.icon li {
+    margin-right: 15px;  /* Adds more space between the icons */
+}
+.icon li a {
+    font-size: 20px;  /* Adjust icon size */
+}
+body {
+    margin: 0;
+}
+
+.first {
+    background-color: rgb(193, 192, 191); /* لون الخلفية */
+    padding: 20px; /* مسافة داخلية */
+    height: 10%; /* الارتفاع يتكيف مع المحتوى */
+}
+
+.first h1 {
+    text-align: center; يجعل العنوان في وسط القسم
+    font-size: 28px; /* حجم أكبر للعنوان */
+    font-weight: bold; /* الخط يكون عريض */
+    margin-bottom: 20px; /* مسافة بين العنوان والمحتوى */
+    color: #333; /* لون النص */
+}
+
+.content {
+    display: flex; /* لجعل النص والصورة بجانب بعضهما */
+}
+.content img {
+    max-width: 20%; /* حجم الصورة */
+    height: auto; /* الحفاظ على النسبة بين العرض والطول */
+    margin-right: 20px; /* مسافة بين الصورة والنص */
+    border-radius: 10px; /* حواف دائرية للصورة */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* ظل خفيف للصورة */
+    transition: background-color 0.3s ease;
+}  
+
+.content p {
+    text-align: justify; /* النص مضبوط من الطرفين */
+    font-size: 16px; /* حجم النص */
+    line-height: 1.5; /* مسافة بين السطور */
+    margin: 0; /* إزالة المسافات الإضافية */
+    /* flex: 1; النص يأخذ المساحة المتبقية */
+}
+.first img:hover {
+    background-color: rgb(88, 88, 77); 
+    padding: 5px; 
+    transition: background-color 0.3s ease; 
+}
+/* Second Section */
+.second {
+    padding: 40px 20px;
+    background-color: #e8f5e9;
+}
+
+.second h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Portfolio Section */
+.card {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    max-height: 150px;
+    object-fit: cover;
+}
+
+/* Contact Section */
+form .form-control {
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .first img {
+        max-width: 100%;
+    }
+
+    .second h2, .card-title {
+        font-size: 18px;
+    }
+}
